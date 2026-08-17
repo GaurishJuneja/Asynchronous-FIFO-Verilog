@@ -179,15 +179,15 @@ The complete waveform set is organized by test case in the [`Waveforms/`](Wavefo
 
 ### Example: FIFO Basic Operation
 
-<img width="1491" height="448" alt="Image 02" src="https://github.com/user-attachments/assets/e75a4a7e-cf21-4d5d-8bea-3d4327f30f17" />
+![Test 2 Waveform](<Waveforms/Test 2(Basic Operation)/Image 02.png>)
 
 
 
 ### Example: Full and Overflow Protection
 
-<img width="1631" height="446" alt="Image 03" src="https://github.com/user-attachments/assets/7f7025b4-6735-45d2-b682-2c1cbdd4b7e4" />
+![Test 3 Waveform(1)](<Waveforms/Test 3( Full + Overflow)/Image 03.png>)
 
-<img width="1630" height="449" alt="Image 04" src="https://github.com/user-attachments/assets/e74cff50-e50e-4cf5-9345-fff6e7fdf0e4" />
+![Test 3 Waveform(2)](<Waveforms/Test 3( Full + Overflow)/Image 04.png>)
 
 
 The waveform captures are intended to complement the self-checking console output: the console verifies the transactions automatically, while the waveforms provide visual evidence of the underlying RTL behavior.
