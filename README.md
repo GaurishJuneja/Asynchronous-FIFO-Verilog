@@ -41,7 +41,10 @@ The write interface is **synchronous to `wclk`**, while the read side uses **asy
 ## Design Architecture
 
 The FIFO is divided into independent write and read domains.
-<img width="1024" height="578" alt="async_fifo" src="https://github.com/user-attachments/assets/a30e30ac-f8db-44f0-a42f-f5c63e2f540c" />
+
+![Architecture](<Architecture.gif>)
+
+
 
 ### Clock-Domain Crossing
 
@@ -54,8 +57,8 @@ Write Domain                         Read Domain
 
    wptr ── Gray ──► 2-FF Sync ──►   Empty Detection
                                      
-   rptr ◄── Gray ◄── 2-FF Sync ◄──   rptr
-           crossing                    
+   Full Detection ◄── Gray ◄── 2-FF Sync ◄──   rptr
+                  
 
 ```
 
@@ -275,6 +278,7 @@ Asynchronous-FIFO-Verilog/
 │   └── Console_Output_Summary.png
 │
 └── README.md
+└── Architecture.gif
 ```
 
 ---
