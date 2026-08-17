@@ -12,6 +12,17 @@ A FIFO (First-In-First-Out) stores data in the order it is written and returns i
 
 Unlike a synchronous FIFO, an asynchronous FIFO operates with **independent write and read clocks**. This makes it useful when data must cross between logic blocks operating at different clock frequencies.
 
+## Key Design Features
+
+- Parameterizable data width and FIFO depth
+- Independent read and write clock domains
+- Gray-code read/write pointers
+- Two-stage synchronizers for CDC
+- Full flag generation
+- Empty flag generation
+- Self-checking testbench
+- GTKWave-based waveform verification
+
 ### Configuration
 
 | Parameter          |      Value |
@@ -208,7 +219,9 @@ The project was simulated using:
 From the repository root:
 
 ```bash
-iverilog -I rtl -o sim tb/tb.v rtl/*.v```
+iverilog -I rtl -o sim tb/tb.v rtl/*.v
+```
+
 
 ### Run
 
