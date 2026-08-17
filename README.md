@@ -272,6 +272,7 @@ Asynchronous-FIFO-Verilog/
 │
 ├── Simulation/
 │   └── Console_Output.txt
+│   └── Console_Output_Summary.png
 │
 └── README.md
 ```
@@ -282,7 +283,8 @@ Asynchronous-FIFO-Verilog/
 
 All nine verification scenarios are designed to complete without data mismatches or FIFO-model inconsistencies.
 
-<img width="457" height="247" alt="image" src="https://github.com/user-attachments/assets/edf8fc7f-175a-4304-b319-80aef6c64643" />
+![Verification Summary](<Simulation/Console_Output_Summary.png>)
+
 
 
 The repository contains both the **RTL implementation** and the **verification evidence** needed to inspect how the FIFO behaves under normal, boundary, asynchronous, randomized, and reset conditions.
